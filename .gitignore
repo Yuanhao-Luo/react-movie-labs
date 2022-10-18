@@ -105,3 +105,5 @@ dist
 
 
 .env
+
+cypress.env.json
