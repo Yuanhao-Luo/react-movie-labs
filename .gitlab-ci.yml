@@ -41,7 +41,7 @@ bundle_app:
 
 e2etest:
 # Node docker image with Cypress and Chrome pre-installed
-  image: movies/cypress/browsers:node12.14.1-chrome85-ff81
+  image: cypress/browsers:node12.14.1-chrome85-ff81
   stage: test
   script:
     - cd movies
