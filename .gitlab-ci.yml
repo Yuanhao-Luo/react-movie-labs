@@ -9,8 +9,7 @@ stages:
 install_dependencies:
   stage: install
   script:
-    - cd movies
-    - npm ci
+    - npm ci /movies
   artifacts:
     paths:
       - movies/node_modules/
@@ -18,5 +17,4 @@ install_dependencies:
 bundle_app:
   stage: build
   script:
-    - cd movies
-    - npm run build
+    - npm run build /movies
