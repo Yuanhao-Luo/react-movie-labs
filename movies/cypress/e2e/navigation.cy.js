@@ -50,7 +50,7 @@ describe("Navigation", () => {
     describe("From the favourites page to a movie's details", () => {
         beforeEach(() => {
             cy.get("button[aria-label='add to favorites']").eq(1).click();
-            cy.visit("/movies/favorites");
+            cy.get("button").contains("Favorites").click();
         });
         it("navigates to the movie details page and change browser URL", () => {
             cy.get(".MuiCardActions-root").eq(0).contains("More Info").click();
