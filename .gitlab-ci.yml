@@ -4,6 +4,7 @@ image: node:latest
 stages:
   - install
   - build
+  - exercise
   - test
 
 variables:
@@ -62,3 +63,10 @@ test_jobX:
     - branchX
   script:
     - echo "Run test job X"
+
+exercise_job:
+  stage: exercise
+  only:
+    - main
+  script:
+    - echo "Run exercise_job"
