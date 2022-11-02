@@ -9,6 +9,7 @@ const HomePage = (props) => {
 
   const {  data, error, isLoading, isError }  = useQuery('upcoming', getUpcoming)
 
+  
   if (isLoading) {
     return <Spinner />
   }
