@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 import AddToPlayList from '../components/cardIcons/addToPlayList'
 
-const HomePage = (props) => {
+const UpcomingPage = (props) => {
 
   const {  data, error, isLoading, isError }  = useQuery('upcoming', getUpcoming)
 
@@ -34,4 +34,4 @@ const HomePage = (props) => {
     />
   );
 };
-export default HomePage;
+export default UpcomingPage;
